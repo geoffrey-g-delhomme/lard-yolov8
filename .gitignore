@@ -1,0 +1,7 @@
+.conda
+datasets
+tmp
+.env.local
+/*.pt
+runs
+*.ipynb_checkpoints

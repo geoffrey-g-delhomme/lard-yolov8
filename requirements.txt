@@ -1,0 +1,28 @@
+# --index-url https://download.pytorch.org/whl/cu118
+torch
+
+opencv-python
+matplotlib
+numpy
+pandas
+plotly
+pyyaml
+tqdm
+python-dotenv
+isort
+ultralytics
+ipykernel
+nbformat
+py-markdown-table
+onnx
+onnx-simplifier
+
+tensorflow
+tflite-support
+onnx2tf
+sng4onnx
+onnx-graphsurgeon
+nvidia-pyindex
+
+# ultralytics issue
+lap
