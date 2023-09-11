@@ -2,7 +2,6 @@
 
 This repository contains material to train the YOLO v8 neural network architectures from [Ultralytics](https://github.com/ultralytics/ultralytics) on the [LARD](https://github.com/deel-ai/LARD) dataset, for detection, segmentation and pose estimation tasks.
 
-
 ## Preview
 
 ### Pose estimation
@@ -42,7 +41,7 @@ This repository contains material to train the YOLO v8 neural network architectu
 Example of installation:
 
 ```
-conda create -p ./.conda python=3.10
+conda create -p ./.conda python=3.10 pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia -y
 pip install -r requirements.txt
 ```
 

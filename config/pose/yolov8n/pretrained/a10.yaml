@@ -1,0 +1,10 @@
+
+project: runs/pose/yolov8n
+model: yolov8n-pose.pt
+pretrained: True
+imgsz: 2048
+epochs: 20
+patience: 10
+optimizer: AdamW
+lr0: 0.001
+cos_lr: True

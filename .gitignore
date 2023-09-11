@@ -1,7 +1,10 @@
-.conda
+.venv
+.env
 datasets
 tmp
 .env.local
 /*.pt
 runs
 *.ipynb_checkpoints
+_*
+screenlog.*

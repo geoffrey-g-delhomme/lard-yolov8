@@ -1,6 +1,7 @@
 # --index-url https://download.pytorch.org/whl/cu118
 torch
 
+notebook
 opencv-python
 matplotlib
 numpy
@@ -11,18 +12,17 @@ tqdm
 python-dotenv
 isort
 ultralytics
-ipykernel
-nbformat
 py-markdown-table
 onnx
 onnx-simplifier
+torchinfo
 
-tensorflow
-tflite-support
-onnx2tf
-sng4onnx
-onnx-graphsurgeon
-nvidia-pyindex
+# tensorflow
+# tflite-support
+# onnx2tf
+# sng4onnx
+# nvidia-pyindex
+# onnx-graphsurgeon
 
 # ultralytics issue
-lap
+# lap
