@@ -1,0 +1,9 @@
+
+project: runs/pose/yolov8n
+model: yolov8n-pose.yaml
+pretrained: False
+imgsz: 2048
+epochs: 200
+optimizer: AdamW
+lr0: 0.001
+cos_lr: True

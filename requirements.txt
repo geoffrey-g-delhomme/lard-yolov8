@@ -1,5 +1,5 @@
 # --index-url https://download.pytorch.org/whl/cu118
-torch
+# torch
 
 notebook
 opencv-python
@@ -16,6 +16,8 @@ py-markdown-table
 onnx
 onnx-simplifier
 torchinfo
+tensorboard
+yt-dlp
 
 # tensorflow
 # tflite-support

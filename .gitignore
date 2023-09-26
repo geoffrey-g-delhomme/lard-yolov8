@@ -4,7 +4,8 @@ datasets
 tmp
 .env.local
 /*.pt
-runs
 *.ipynb_checkpoints
 _*
 screenlog.*
+*.avi
+*.nfs*

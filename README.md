@@ -41,7 +41,7 @@ This repository contains material to train the YOLO v8 neural network architectu
 Example of installation:
 
 ```
-conda create -p ./.conda python=3.10 pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia -y
+conda create -p ./.venv python=3.10 pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia -y
 pip install -r requirements.txt
 ```
 
@@ -53,23 +53,20 @@ All the neural networds are available under the `nn` directory tree, with ONNX e
 
 ## Metrics
 
-### Pose estimation
-
-| task | mult-adds<br>(GFLops) | weights    | mAP50<br>BBOX | mAP50:95<br>BBOX | mAP50<br>POSE | mAP50:95<br>POSE |
-| ---- | --------------------- | ---------- | ------------- | ---------------- | ------------- | ---------------- |
-| pose | 42.66                 | pretrained | 0.99          | 0.9              | 0.98          | 0.95             |
-| pose | 42.66                 | scratch    | 0.98          | 0.85             | 0.97          | 0.91             |
-
 ### Detection
 
-| task   | mult-adds<br>(GFLops) | weights    | mAP50<br>BBOX | mAP50:95<br>BBOX |
-| ------ | --------------------- | ---------- | ------------- | ---------------- |
-| detect | 41.39                 | pretrained | 0.99          | 0.91             |
-| detect | 41.39                 | scratch    | 0.99          | 0.87             |
+| task   | mult-adds<br>(G) | BOX<br>Precision | BOX<br>Recall | BOX<br>mAP50 | BOX<br>mAP50-95 |
+| ------ | ---------------- | ---------------- | ------------- | ------------ | --------------- |
+| detect | 41.39            | 0.97             | 0.858         | 0.93         | 0.786           |
 
 ### Segmentation
 
-| task    | mult-adds<br>(GFLops) | weights    | mAP50<br>BBOX | mAP50:95<br>BBOX | mAP50<br>MASK | mAP50:95<br>MASK |
-| ------- | --------------------- | ---------- | ------------- | ---------------- | ------------- | ---------------- |
-| segment | 61.31                 | pretrained | 0.98          | 0.87             | 0.97          | 0.76             |
-| segment | 61.31                 | scratch    | 0.99          | 0.87             | 0.97          | 0.73             |
+| task    | mult-adds<br>(G) | BOX<br>Precision | BOX<br>Recall | BOX<br>mAP50 | BOX<br>mAP50-95 | POSE<br>Precision | POSE<br>Recall | POSE<br>mAP50 | POSE<br>mAP50-95 |
+| ------- | ---------------- | ---------------- | ------------- | ------------ | --------------- | ----------------- | -------------- | ------------- | ---------------- |
+| segment | 61.31            | 0.973            | 0.846         | 0.932        | 0.796           | 0.961             | 0.833          | 0.916         | 0.675            |
+
+### Pose estimation
+
+| task | mult-adds<br>(G) | BOX<br>Precision | BOX<br>Recall | BOX<br>mAP50 | BOX<br>mAP50-95 | POSE<br>Precision | POSE<br>Recall | POSE<br>mAP50 | POSE<br>mAP50-95 |
+| ---- | ---------------- | ---------------- | ------------- | ------------ | --------------- | ----------------- | -------------- | ------------- | ---------------- |
+| pose | 42.66            | 0.967            | 0.867         | 0.939        | 0.797           | 0.947             | 0.849          | 0.91          | 0.866            |
